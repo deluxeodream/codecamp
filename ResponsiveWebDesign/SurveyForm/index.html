@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Coffee Lover Survey Form</h1>
+        <p id="description" class="description text-center">
+          Because we love coffee so much
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which is the best time for coffee?</p>
+          <select id="dropdown" name="time" class="form-control" required>
+            <option disabled selected value>Select the best time for coffee</option>
+            <option value="student">Breakfast</option>
+            <option value="job">Lunch</option>
+            <option value="learner">Afternoon</option>
+            <option value="learner">Dinner</option>
+            <option value="preferNo">Every hour</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Do you consider yourself as coffee lover?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label>
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label>
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label>
+        </div>
+
+        <div class="form-group">
+          <p>
+           What coffee flavors do you like?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <fieldset>
+            <legend>Basic Coffee Drinks</legend>
+            <label>
+                <input
+                  name="prefer"
+                  value="black-coffee"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Black Coffee</label>
+              <label> 
+                <input
+                  name="prefer"
+                  value="turkish-coffee"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Turkish Coffee</label>
+            <label>
+                <input
+                  name="prefer"
+                  value="cold-brew"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Cold Brew</label>
+            <label>
+                <input
+                  name="prefer"
+                  value="iced-coffee"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Iced Coffee</label>   
+          </fieldset>
+          <fieldset>
+            <legend>Variety of Espresso Based Drinks</legend>
+            <label>
+                <input
+                  name="prefer"
+                  value="ristretto"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Ristretto</label>
+              <label> 
+                <input
+                  name="prefer"
+                  value="doppio"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Doppio</label>
+            <label>
+                <input
+                  name="prefer"
+                  value="lungo"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Lungo</label>
+          </fieldset>
+          <fieldset>
+            <legend>Milk-Based Espresso Specialties</legend>
+            <label>
+                <input
+                  name="prefer"
+                  value="cappuccino"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Cappuccino</label>
+              <label> 
+                <input
+                  name="prefer"
+                  value="latte"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Latte</label>
+            <label>
+                <input
+                  name="prefer"
+                  value="mocha"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Mocha</label>
+            <label>
+                <input
+                  name="prefer"
+                  value="macchiato"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Macchiato</label>
+              <label>
+                <input
+                  name="prefer"
+                  value="espresso-romano"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Espresso Romano</label>
+              <label>
+                <input
+                  name="prefer"
+                  value="espressino"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Espressino</label>
+              <label>
+                <input
+                  name="prefer"
+                  value="flat-white"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Flat White</label>
+              <label>
+                <input
+                  name="prefer"
+                  value="antoccino"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Antoccino</label>
+              <label>
+                <input
+                  name="prefer"
+                  value="vienna"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Vienna</label>      
+          </fieldset>
+          
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

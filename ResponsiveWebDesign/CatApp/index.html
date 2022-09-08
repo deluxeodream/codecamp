@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatApp</title>
+</head>
+<body>
+    
+    <h1>CatPhotoApp</h1>
+    
+    <main>
+
+        <section>
+            <h2>Cat Photos</h2>
+            <p>Click here to view more
+            <a href="#" target="_blank">cat photos</a></p>
+            <a href="#">
+            <img src="assets/img/cat.jpg" alt="relaxing-cat">
+            </a>  
+        </section>
+
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <figure>
+                    <img src="assets/img/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                    <figcaption>Cats <em>loves</em> lasagna.</figcaption>
+                </figure>
+                <h3>Top 3 things cats hate:</h3>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <figure>
+                    <img src="assets/img/cats.jpg" alt="Five cats looking around a field">
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                </figure>
+        </section>
+
+        <section>
+            <h2>Cat Form</h2>
+            <!-- 
+                TODO: 
+                    Wrap to fieldset.
+                    Add legend
+                        "Is your cat indoor or outdoor?" I/O
+                        "What's your cat personality?" Loving/Lazy/Energetic
+                    
+            -->
+            <form action="/submit-cat-photo.html" target="_blank">
+                <fieldset>
+                    <legend>Is your cat indoor or outdoor?</legend>
+                    <label><input type="radio" name="indoor-outdoor" id="indoor" checked> Indoor</label>
+                    <label><input type="radio" name="indoor-outdoor" id="outdoor"> Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat personality?</legend>
+                    <label><input type="checkbox" name="loving" id="loving" checked> Loving</label>
+                    <label><input type="checkbox" name="lazy" id="lazy" value="lazy"> Lazy</label>
+                    <label><input type="checkbox" name="energetic" id="energetic" value="energetic"> Energetic</label>
+                </fieldset>
+                <input type="text"  name="catphotourl" placeholder=" cat photo URL" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>No Copyright @ <a href="#">CatPhotoApp</a> 2022</p>
+    </footer>
+    
+</body>
+</html>
